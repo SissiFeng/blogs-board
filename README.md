@@ -14,7 +14,23 @@ GitHub Actions 每 6 小时从上游 CSV 同步目录，并抓取所有提供 RS
 - 默认保留按发布时间排序最近 3,000 篇在架文章，每篇正文至多 16,000 字符。较早文章会移出列表，避免无限占用空间。已打开后收藏的文章含正文，会保存在当前浏览器。
 - 摘要直接提取 RSS 内容，不做 AI 改写。源只提供摘要时，需要打开原文阅读全文。无 RSS 的博客保留在目录中；失效 RSS 不会导致其他来源停止更新。
 
-## 部署到 Cloudflare Pages（推荐，不需填写密钥）
+## 当前部署：Cloudflare Workers 静态网站
+
+本仓库的 `wrangler.toml` 已配置 Workers Static Assets，适配控制台创建的 `blogs-board` Worker：
+
+- 构建命令：留空（若必须填写，用 `exit 0`）。
+- 部署命令：`npx wrangler deploy`。
+- 根目录：仓库根目录。
+- 生产分支：`main`。
+- 静态目录：`public`，由 `[assets]` 声明，无需 Worker 脚本入口或数据库。
+
+Git 更新后由已连接的 Workers Builds 自动部署，首次失败后请确认新构建使用最新提交。保留 Workers Free 方案即可；静态资源的费用与限制参见 [官方说明](https://developers.cloudflare.com/workers/static-assets/billing-and-limitations/)。GitHub Actions 抓取方案与阅读功能不变。
+
+### 如需改用 Pages
+
+下面是另一种部署方式。当前项目已使用 Workers，不必重新创建 Pages。若以后迁移，请先把 `wrangler.toml` 的 `[assets]` 两行删除，改为顶层 `pages_build_output_dir = "public"` 后再按下列步骤操作。
+
+## 部署到 Cloudflare Pages（替代方案）
 
 1. 源码已准备提交到 `SissiFeng/blogs-board` 的 `main` 分支，包含 `.github` 定时更新配置。
 2. 打开仓库的 **Actions → Update reading library → Run workflow**，在默认分支运行第一次更新。等待任务完成，确认提交出现，且 `public/data/index.json` 的 `articles` 不再为空。有些站点可能失效，目录会显示状态。
