@@ -1,0 +1,1 @@
+{"id":"491f0e6b8f5adff1c98c4ffe","blogId":"992f5223dbf1d038a205fb9d","blog":"敖苛记","url":"https://blog.kayro.cn/posts/7d7ab77","title":"C++ 学习笔记：vector 不能存引用吗","date":"2026-10-09T14:35:30+00:00","tags":["生活","技术","编程","开源","记录"],"summary":"记录 vector 不能存引用的原因，以及存值、存指针的区别。 点击查看全文","content":"记录 vector 不能存引用的原因，以及存值、存指针的区别。\n\n点击查看全文","truncated":false}
