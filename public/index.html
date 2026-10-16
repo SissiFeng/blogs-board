@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="zh-CN">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="一处安静的中文独立博客阅读空间"><meta name="color-scheme" content="light dark"><title>博间 · 独立博客阅读室</title><link rel="stylesheet" href="style.css"><script src="app.js" defer></script></head>
+<body>
+<aside class="sidebar">
+<a class="brand" href="./"><span class="brandmark">间</span><span>博间<small>BLOG HARBOR</small></span></a>
+<p class="side-label">我的阅读室</p>
+<nav aria-label="阅读分类"><button data-view="all" class="active"><span>◫</span>全部文章 <b id="all-count">0</b></button><button data-view="unread"><span>◉</span>尚未读过 <b id="unread-count">0</b></button><button data-view="saved"><span>☆</span>我的收藏 <b id="saved-count">0</b></button><button data-view="blogs"><span>▤</span>博客目录</button></nav>
+<div class="side-divider"></div><p class="side-label">发现主题</p><div id="side-tags" class="side-tags"></div>
+<div class="sidebar-bottom"><p><i></i> 把阅读交还给自己</p><a href="https://github.com/timqian/chinese-independent-blogs" target="_blank" rel="noreferrer">源自中文独立博客列表 ↗</a><button id="theme">◐ 切换明暗</button><button id="export">↓ 导出阅读记录</button><label class="import">↑ 导入阅读记录<input id="import" type="file" accept="application/json" hidden></label></div>
+</aside>
+<div class="workspace"><header class="topbar"><span>独立的声音，值得被听见。</span><div class="top-actions"><span id="sync">等待载入</span><button id="reload" title="重新载入已更新的订阅数据">↻ 重新载入</button></div></header>
+<main><section class="intro"><div><p class="eyebrow">A QUIET CORNER OF THE INTERNET</p><h1 id="page-title">今天，读点不一样的。</h1><p id="page-desc">离开信息流的喧嚣，在独立博客里发现新的视角。</p></div><div class="intro-symbol" aria-hidden="true">✳</div></section>
+<div class="overview"><span><b id="blog-count">—</b> 个独立博客</span><span><b id="article-count">—</b> 篇在架文章</span><span class="overview-note">每 6 小时检查更新 · 按发布时间排序</span></div>
+<section class="controls" aria-label="筛选文章"><div id="chips" class="chips"></div><label class="search"><span aria-hidden="true">⌕</span><input id="search" type="search" placeholder="搜索文章、博客、主题…" aria-label="搜索文章、博客、主题"><kbd>/</kbd></label></section>
+<div class="results-bar"><span id="result-count">正在整理阅读室…</span><div><select id="sort" aria-label="排序"><option value="new">最新发布</option><option value="old">最早发布</option></select><button id="mark-all">本页标为已读</button></div></div>
+<div id="notice" role="status" hidden></div><section id="cards" class="cards" aria-label="文章卡片"></section><div class="pagination"><button id="more" hidden>再看一些 ↓</button></div>
+<footer>博间 <span>·</span> 阅读，不必追赶。<a href="https://github.com/timqian/chinese-independent-blogs" target="_blank" rel="noreferrer">关于来源 ↗</a></footer></main></div>
+<dialog id="reader"><div class="reader-tools"><span>博间 / 阅读</span><div><button id="reader-save">☆ 收藏</button><button id="close-reader" aria-label="关闭阅读">✕</button></div></div><div id="reader-body"></div></dialog><div id="toast" role="status" hidden></div>
+</body></html>
