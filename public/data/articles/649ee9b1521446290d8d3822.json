@@ -1,1 +1,0 @@
-{"id":"649ee9b1521446290d8d3822","blogId":"209759f0335dceef0ecef9f1","blog":"蚊子前端博客","url":"https://www.xiabingbao.com/post/electron-ipcrenderer-ipcmain-thrhfd.html","title":"Electron 渲染进程和主进程之间如何通信","date":"2026-07-06T16:21:13+00:00","tags":["编程","前端"],"summary":"在 electron 中，渲染进程和主进程之间如何通信呢？","content":"在 electron 中，渲染进程和主进程之间如何通信呢？","truncated":false}
