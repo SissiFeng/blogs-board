@@ -1,0 +1,1 @@
+{"id":"02275572fc47b0878b7929e6","blogId":"9d2c2fe5bf75523ecd0c7c5f","blog":"MukunJin","url":"https://mukunjin.com/posts/minimalist-git-server/","title":"128MB 内存也能跑 Git 服务器：SSH + 裸仓库实现零依赖部署","date":"2026-08-03T12:00:13+00:00","tags":["编程","计算机","思考","学习","AI","技术"],"summary":"介绍如何使用原生Git搭建一个轻量级Git服务器。","content":"介绍如何使用原生Git搭建一个轻量级Git服务器。","truncated":false}
