@@ -1,1 +1,0 @@
-{"id":"a2f22ff31c9d661aa28004c2","blogId":"8c5173616fd8d99f81d69097","blog":"暗无天日","url":"https://lujun9972.github.io/blog/2026/07/22/用-proc-pid-fd-追踪进程网络连接/index.html","title":"用 /proc/pid/fd 追踪进程网络连接","date":"2026-07-24T00:00:00+00:00","tags":["Emacs","Linux"],"summary":"不装任何工具，用 /proc 文件系统查看进程的网络连接。","content":"不装任何工具，用 /proc 文件系统查看进程的网络连接。","truncated":false}
