@@ -1,1 +1,0 @@
-{"id":"b80742a44731fb73c65fb11c","blogId":"4dd1bcafd2689a9baa1493ed","blog":"任霏博客","url":"https://blog.renfei.net/posts/1626402130325676142","title":"Coldcard 冷钱包漏洞：约 1367 枚 BTC 被盗","date":"2026-08-03T11:54:32+00:00","tags":["编程","Java","经验"],"summary":"Coldcard 部分固件错误地使用了可预测的软件伪随机数生成种子，导致私钥可能被离线穷举。","content":"Coldcard 部分固件错误地使用了可预测的软件伪随机数生成种子，导致私钥可能被离线穷举。","truncated":false}
