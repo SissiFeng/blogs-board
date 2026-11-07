@@ -1,0 +1,1 @@
+{"id":"f3380caf874bdf6fd903ca8e","blogId":"5a7cb18ea6dbd8dbc933d04c","blog":"初然忆","url":"https://www.imcry.vip/post/2026-11-7-2152/","title":"从阿里云企业邮转移到网易企业邮","date":"2026-11-07T13:58:52+00:00","tags":["编程","生活","记录"],"summary":"据说阿里云企业邮在smtp发信时，会把来源IP替换成阿里的，这么做可以避免发信的服务器在邮件中暴露IP。","content":"据说阿里云企业邮在smtp发信时，会把来源IP替换成阿里的，这么做可以避免发信的服务器在邮件中暴露IP。","truncated":false}
